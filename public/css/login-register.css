@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EAC926;
+    padding:10px;
+}
+
+.alreadyacc{
+    align-self: center;
+}
+
+header {
+    background-color: #EAC926;
+    display:none;
+}
+
+.top-header{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#logo-header {
+    width: 50%;
+    padding: 3% 0 3% 5%;
+}
+
+.searchbar-form {
+    align-items: center;
+    margin: auto;
+    padding-left: 3%;
+}
+
+.searchbar-input {
+    width: 70%;
+    align-self: center;
+}
+
+.searchbar-button{
+        background-color: whitesmoke;
+}
+
+nav {
+    display: none;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 3px;
+}
+
+#cuotas-nav {
+    text-align: center;
+    font-size: 12px;
+    align-self: center;
+    width: 300%;
+}
+
+.barra-busqueda-padre {
+    display: flex;
+    width:50%;
+}
+
+.barra-busqueda {
+    background-color: white;
+    border: 1px solid;
+    margin: 0px 0px 5px 30px;
+    display: none;
+}
+
+.barra-busqueda-icon {
+    background-color: white;
+    border: 1px solid;
+    display: none;
+    margin: 0px 30px 5px 3px;
+    padding: 1px;
+    border-radius: 3px;
+}
+.searchbar-form {
+    display:none;
+}
+
+.register-div{
+    display:flex;
+    justify-content: center;
+
+    padding: 5%;
+    align-items: center;
+    height: 80vh;
+    width:100%;
+    
+    flex-wrap: wrap;
+}
+
+.register-form {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    width: 70vh;
+}
+
+h2 {
+    text-align: center;
+    font-style: italic;
+    font-family: Verdana;
+    width: 100%;
+}
+
+#logo {
+    width: 100%;
+    align-self: start;
+}
+
+.register-form div {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.register-form div input {
+    font-weight: bold;
+}
+
+.register-form div button {
+    margin: 4px;
+    font-weight: bold;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    color: #3c4043;
+}
+
+.ingresar-btn{
+    margin: 4px;
+    font-weight: bold;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    color: #3c4043;
+}
+
+select {
+    font-weight: bold;
+}
+
+.textinput:focus {
+    border: 2px solid rgb(128, 167, 70);
+}
+
+footer {
+    display:none;
+}
+
+@media (min-width: 768px) {
+
+body {
+    padding: 0;
+}
+
+.register-div{
+    padding-top:0;
+    height: 85vh;
+}
+
+header {
+    display: block;
+}
+
+#logo {
+    display:none;
+}
+
+.logo-header {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+
+.nav-header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 7%;
+    padding-left: 7%;
+    margin-top: 3%;
+}
+
+.left-nav, .right-nav{
+    display:flex;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li{
+    width:auto;
+    padding: 0 5px;
+}
+
+.vender, .compras{
+    display:none;
+}
+
+.barra-busqueda-padre{
+    display:none;
+}
+
+}
+
+@media (min-width: 1024px){
+
+.register-div{
+
+background-color: whitesmoke;
+height: 100vh;
+}
+
+.register-form{
+    border:none;
+}
+
+.ingresar-btn{
+    transition: 0.3s;
+}
+
+.ingresar-btn:hover {
+    background-color: #3558e2;
+    color:white;
+}
+
+.register-form div button{
+    transition: 0.3s;
+}
+
+.register-form div button:hover {
+    background-color: #3558e2;
+    color:white;
+}
+
+}

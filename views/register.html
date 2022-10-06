@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/login-register.css">
+    <title>Mercado Liebre</title>
+</head>
+<body>
+        <header>
+            <div class="logo-header"><img src="/images/mercadoliebre-logo-register.png" alt=""></div>
+                <div class="nav-header-container">
+                    <nav class="left-nav">
+                        <ul>
+                            <li><a href="">Ofertas</a></li>
+                            <li><a href="">Tiendas Oficiales</a></li>
+                            <li class="vender"><a href="">Vender</a></li>
+                            <li><a href="">Ayuda</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="right-nav">
+                        <ul>
+                            <li><a href="/register">Creá tu cuenta <i class="fa-regular fa-user"></i></a></li>
+                            <li><a href="/login">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                            <li class="compras"><a href="">Mis compras <i class="fa-solid fa-cart-shopping"></i></a></li>
+                        </ul>
+                    </nav>
+    </header>
+    <main>
+        <div class="register-div">
+            <img id="logo" src="/images/logo-mercado-liebre.svg" alt="">
+        <form class="register-form" action="/" method="get">
+            <div>
+            <label for="fullname">Nombre y apellido</label>
+                <input  class="textinput" id="fullname" placeholder="Ingrese nombre y apellido"type="text" name="fullname">
+            </div>
+            <div>
+            <label for="username">Nombre de usuario</label>
+                <input id="username" placeholder="Ingrese nombre de usuario" type="text" name="username" minlength="5" maxlength="12">
+            </div>
+            <div>
+                <label for="pass">Contraseña</label>
+                    <input type="password" name="password" id="pass" minlength="8">
+                
+            </div>
+            <div>
+                <label for="copass">Confirmar contraseña</label>
+                    <input type="password" name="confirm_password" id="copass">
+                
+            </div>
+            <div>
+            <label for="date">Fecha de nacimiento</label>
+                <input id="date" type="date" name="born">
+            
+            </div>
+            <div>
+            <label for="adress">Domicilio</label>
+                <input id="adress" placeholder="Calle falsa 123" type="text" name="adress">
+            
+            </div>
+            <div>
+            <label for="profile">Perfil de usuario</label>
+                <article><input id="profile" type="radio" name="userprofile" value="Vendedor">  Vendedor</article>
+                <article><input id="profile"  type="radio" name="userprofile" value="Comprador">  Comprador</article>
+            
+            </div>
+            <div>
+            <label for="cat">Categoria</label>
+                <select name="category" id="cat">
+                    <option value="electro">Electro</option>
+                    <option value="Moda">Moda</option>
+                    <option value="Hogar">Hogar</option>
+                    <option value="Jugueteria">Jugueteria</option>
+                    <option value="vida_sana">Vida Sana</option>
+                </select>
+            
+            </div>
+            <div>
+            <label for="pic">Foto de usuario</label>
+                <input id="pic" type="file" accept=".png, .jpg">
+            
+            </div>
+            <div>
+            <button type="submit">Registrarse</button>
+            <button type="reset">Borrar</button>
+            </div>
+            <div class="alreadyacc">
+                <p>
+                    <a href="/login">¿Ya tienes una cuenta?</a>
+                </p>
+            </div>
+        </form>
+    </div>
+    </main>
+    <footer></footer>
+</body>
+</html>

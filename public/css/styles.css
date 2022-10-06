@@ -1,0 +1,416 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+header {
+    background-color: #EAC926;
+    padding-bottom: 10%;
+}
+
+.top-header{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#logo {
+    width: 50%;
+    padding: 3% 0 3% 5%;
+}
+
+.searchbar-form {
+    align-items: center;
+    margin: auto;
+    padding-left: 3%;
+}
+
+.searchbar-input {
+    width: 70%;
+    align-self: center;
+    border:none;
+}
+
+.searchbar-button{
+        position: relative;
+        right: 33px;
+        border: none;
+        background-color: white;
+}
+
+nav {
+    display: none;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 3px;
+}
+
+#cuotas-nav {
+    text-align: center;
+    font-size: 12px;
+    align-self: center;
+    width: 300%;
+}
+
+.barra-busqueda-padre {
+    display: flex;
+    width:50%;
+}
+
+.barra-busqueda {
+    background-color: white;
+    border: 1px solid;
+    margin: 0px 0px 5px 30px;
+    display: none;
+}
+
+.barra-busqueda-icon {
+    background-color: white;
+    border: 1px solid;
+    display: none;
+    margin: 0px 30px 5px 3px;
+    padding: 1px;
+    border-radius: 3px;
+}
+
+.titulares {
+    font-size: 24px;
+    margin-top: 0px;
+    padding-top: 3%;
+    color: #666;
+}
+
+.text {
+    font-size: 12px;
+}
+
+.precios {
+    font-size: 18px;
+    margin-bottom: 0%;
+    width: 30%;
+}
+
+.descuentos {
+    font-size: 16px;
+    color: #39b54a;
+    margin: 0;
+    width: 70%;
+    align-self: flex-end;
+}
+
+.descripcion {
+    font-size: 16px;
+    margin-top: 5%;
+    color: #666;
+    display: none;
+
+
+}
+
+
+
+.burger-menu {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    border: solid 1px black;
+    width: 15%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 2%;
+    background-color: #03264C;
+}
+
+footer {
+    background-color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer section div {
+    padding-top: 50px;
+    color: #03264C;
+    font-size: 2em;
+}
+
+footer section p {
+    font-size: 12px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 0px;
+    color: #666;
+    padding-bottom: 50px;
+}
+
+.terminos {
+    font-size: 14px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+}
+
+#copyright {
+    text-align: left;
+    font-size: 10px;
+    color: #666;
+    margin-left: 20px;
+    padding-top: 40px;
+}
+
+#banner {
+    margin-bottom: 0%;
+    display: block;
+}
+
+main {
+    background-color: #ebebeb;
+    padding-bottom: 3%;
+}
+
+main section {
+    width: 90%;
+    margin: auto;
+
+}
+
+main section img {
+    width: 100%;
+    margin-bottom: 0%;
+    margin-top: 0px;
+    display: block;
+}
+
+.main-section-div-padre {
+    background-color: white;
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+}
+
+main section article {
+    margin-bottom: 10px;
+}
+
+main section div p {
+    margin-top: 0px;
+
+}
+
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    color: #39b54a;
+}
+
+.envio {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px;
+    position: relative;
+    bottom: 30px;
+
+}
+
+.precios-descuentos {
+    display: flex;
+}
+
+@media (min-width: 735px) {
+    header {
+        padding-bottom: 3%;
+    }
+
+    .top-header {
+        display: flex;
+        padding: 1%;
+    }
+
+    .articulos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .barra-busqueda,
+    .barra-busqueda-icon {
+        display: block;
+    }
+
+    #logo {
+        margin-left: 0;
+        margin-right: 3%;
+        width: 30%;
+        margin:auto;
+    }
+
+    .barra-busqueda-padre{
+        width: 30%;
+        align-items: center;
+        margin: auto;
+    }
+
+    .searchbar-form{
+        width:100%
+    }
+
+    .searchbar-input{
+        width: 80%;
+    }
+
+    .searchbar-button{
+        width: 13%;
+    }
+
+    #cuotas-nav{
+        align-self: center;
+        margin: auto;
+        width: 30%;
+        padding: 1%;
+    }
+
+    .nav-header-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 7%;
+        padding-left: 7%;
+        margin-top: 3%;
+    }
+
+    .left-nav, .right-nav{
+        display:flex;
+    }
+
+    header nav ul {
+        display: flex;
+    }
+
+    header nav ul li{
+        width:auto;
+        padding: 0 5px;
+    }
+
+    main section article {
+        width: 45%;
+        margin: 2%;
+    }
+
+    .descripcion {
+        display: block;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    header {
+        padding-bottom: 3%;
+    }
+
+    .barra-busqueda {
+        display: block;
+    }
+    .articulos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    main section article {
+        width: 20%;
+        margin: 2%;
+    }
+    .descripcion {
+        display: block;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .descuentos {
+        text-align: center;
+    }
+    
+    
+    .precios{
+        width: auto;
+    }
+    .descripcion {
+        display:none;
+    }
+
+    main section article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    article:hover .descripcion {
+        display:block;
+    }
+
+    article .fa-truck {
+        transition: 0.5s;
+    }
+    article:hover .fa-truck {
+        transform: rotate(-90deg);
+    }
+
+    .footer-legales {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .desc-term {
+        width: 90%;
+        margin:auto;
+    }
+    .terminos {
+        width: 100%;
+        margin: auto;
+    }
+
+    footer section div {
+        width:fit-content;
+        margin:auto;
+        transition: 0.5s;
+    }
+
+    footer section div:hover {
+        color:#2272c7
+    }
+}
